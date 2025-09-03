@@ -83,7 +83,7 @@ TextColor3=Color3.new(0,0,0),
 TextSize=14,
 },
 ImageLabel={
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 BackgroundColor3=Color3.new(1,1,1),
 BorderSizePixel=0,
 },
@@ -341,7 +341,7 @@ SliceCenter=m~="Shadow-sm"and Rect.new(256
 
 )or Rect.new(512,512,512,512),
 SliceScale=1,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 ThemeTag=p.ThemeTag and p.ThemeTag
 },r)
 
@@ -453,11 +453,11 @@ r=SanitizeFilename(r)
 local F=l("Frame",{
 Size=UDim2.new(0,0,0,0),
 
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 l("ImageLabel",{
 Size=UDim2.new(1,0,1,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 ScaleType="Crop",
 ThemeTag=(j.Icon(p)or C)and{
 ImageColor3=B and"Icon"or nil
@@ -566,7 +566,7 @@ Position=UDim2.new(1,-29,0,56),
 AnchorPoint=Vector2.new(1,0),
 Size=g.Size,
 Parent=h,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 
 
 
@@ -656,7 +656,7 @@ l=e("ImageButton",{
 Image=b.Icon"x"[1],
 ImageRectSize=b.Icon"x"[2].ImageRectSize,
 ImageRectOffset=b.Icon"x"[2].ImageRectPosition,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(0,16,0,16),
 Position=UDim2.new(1,-g.UIPadding,0,g.UIPadding),
 AnchorPoint=Vector2.new(1,0),
@@ -667,7 +667,7 @@ ImageTransparency=.4,
 },{
 e("TextButton",{
 Size=UDim2.new(1,8,1,8),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AnchorPoint=Vector2.new(0.5,0.5),
 Position=UDim2.new(0.5,0,0.5,0),
 Text="",
@@ -677,7 +677,7 @@ end
 
 local m=e("Frame",{
 Size=UDim2.new(0,0,1,0),
-BackgroundTransparency=0,
+BackgroundTransparency=.0,
 ThemeTag={
 BackgroundColor3="Text",
 },
@@ -690,7 +690,7 @@ i.Icon and-28-g.UIPadding or 0,
 1,0),
 Position=UDim2.new(1,0,0,0),
 AnchorPoint=Vector2.new(1,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AutomaticSize="Y",
 },{
 e("UIPadding",{
@@ -705,7 +705,7 @@ Size=UDim2.new(1,-30-g.UIPadding,0,0),
 TextWrapped=true,
 TextXAlignment="Left",
 RichText=true,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 TextSize=16,
 ThemeTag={
 TextColor3="Text"
@@ -725,7 +725,7 @@ Size=UDim2.new(1,0,0,0),
 TextWrapped=true,
 TextXAlignment="Left",
 RichText=true,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 TextTransparency=.4,
 TextSize=15,
 ThemeTag={
@@ -751,7 +751,7 @@ ImageColor3="Background"
 },{
 e("CanvasGroup",{
 Size=UDim2.new(1,0,1,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 m,
 e("UICorner",{
@@ -762,7 +762,7 @@ CornerRadius=UDim.new(0,g.UICorner),
 e("ImageLabel",{
 Name="Background",
 Image=i.Background,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(1,0,1,0),
 ScaleType="Crop",
 ImageTransparency=i.BackgroundImageTransparency
@@ -778,7 +778,7 @@ j,l,
 })
 
 local x=e("Frame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(1,0,0,0),
 Parent=h.Holder
 },{
@@ -1440,7 +1440,7 @@ Image=ab.Icon(af)[1],
 ImageRectSize=ab.Icon(af)[2].ImageRectSize,
 ImageRectOffset=ab.Icon(af)[2].ImageRectPosition,
 Size=UDim2.new(0,21,0,21),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 ThemeTag={
 ImageColor3="Icon",
 }
@@ -1451,7 +1451,7 @@ local an=ac("TextButton",{
 Size=UDim2.new(0,0,1,0),
 AutomaticSize="X",
 Parent=ai,
-BackgroundTransparency=0
+BackgroundTransparency=1
 },{
 ab.NewRoundFrame(al,"Squircle",{
 ThemeTag={
@@ -1532,7 +1532,7 @@ HorizontalAlignment="Center",
 }),
 am,
 ac("TextLabel",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 FontFace=Font.new(ab.Font,Enum.FontWeight.SemiBold),
 Text=ae or"Button",
 ThemeTag={
@@ -1582,7 +1582,7 @@ Image=ab.Icon(af)[1],
 ImageRectSize=ab.Icon(af)[2].ImageRectSize,
 ImageRectOffset=ab.Icon(af)[2].ImageRectPosition,
 Size=UDim2.new(0,21,0,21),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 ThemeTag={
 ImageColor3="Icon",
 }
@@ -1592,7 +1592,7 @@ end
 local al=ah~="Input"
 
 local am=ac("TextBox",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 TextSize=17,
 FontFace=Font.new(ab.Font,Enum.FontWeight.Regular),
 Size=UDim2.new(1,ak and-29 or 0,1,0),
@@ -1613,11 +1613,11 @@ TextColor3="Text",
 local an=ac("Frame",{
 Size=UDim2.new(1,0,0,42),
 Parent=ag,
-BackgroundTransparency=0
+BackgroundTransparency=1
 },{
 ac("Frame",{
 Size=UDim2.new(1,0,1,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 ab.NewRoundFrame(aj,"Squircle",{
 ThemeTag={
@@ -1722,7 +1722,7 @@ if ae then af.UICorner=26 end
 if not ae then
 af.UIElements.FullScreen=ab("Frame",{
 ZIndex=999,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 BackgroundColor3=Color3.fromHex"#000000",
 Size=UDim2.new(1,0,1,0),
 Active=false,
@@ -1741,7 +1741,7 @@ ThemeTag={
 BackgroundColor3="Dialog",
 },
 AutomaticSize="Y",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Visible=false,
 ZIndex=99999,
 },{
@@ -1803,7 +1803,7 @@ task.spawn(function()
 af.UIElements.MainContainer.Visible=true
 
 if not ae then
-ac(af.UIElements.FullScreen,0.1,{BackgroundTransparency=0}):Play()
+ac(af.UIElements.FullScreen,0.1,{BackgroundTransparency=.0}):Play()
 end
 ac(af.UIElements.MainContainer,0.1,{ImageTransparency=0}):Play()
 
@@ -1816,7 +1816,7 @@ end)
 end
 function af.Close(ag)
 if not ae then
-ac(af.UIElements.FullScreen,0.1,{BackgroundTransparency=0}):Play()
+ac(af.UIElements.FullScreen,0.1,{BackgroundTransparency=1}):Play()
 af.UIElements.FullScreen.Active=false
 task.spawn(function()
 task.wait(.1)
@@ -1892,7 +1892,7 @@ end
 
 local aq=ac("TextLabel",{
 AutomaticSize="XY",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Text=ag.Title,
 FontFace=Font.new(ab.Font,Enum.FontWeight.SemiBold),
 ThemeTag={
@@ -1902,7 +1902,7 @@ TextSize=20
 })
 local ar=ac("TextLabel",{
 AutomaticSize="XY",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Text="Key System",
 AnchorPoint=Vector2.new(1,0.5),
 Position=UDim2.new(1,0,0.5,0),
@@ -1915,7 +1915,7 @@ TextSize=16
 })
 
 local as=ac("Frame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AutomaticSize="XY",
 },{
 ac("UIListLayout",{
@@ -1929,7 +1929,7 @@ ap,aq
 local at=ac("Frame",{
 AutomaticSize="Y",
 Size=UDim2.new(1,0,0,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 
 
@@ -1956,7 +1956,7 @@ TextTransparency=.4,
 ThemeTag={
 TextColor3="Text",
 },
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 RichText=true,
 TextWrapped=true,
 })
@@ -1964,10 +1964,10 @@ end
 
 local aw=ac("Frame",{
 Size=UDim2.new(1,0,0,42),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 ac("Frame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AutomaticSize="X",
 Size=UDim2.new(0,0,1,0),
 },{
@@ -1990,7 +1990,7 @@ TextColor3="Text",
 },
 TextSize=18,
 FontFace=Font.new(ab.Font,Enum.FontWeight.Medium),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AutomaticSize="XY",
 AnchorPoint=Vector2.new(0.5,0.5),
 Position=UDim2.new(0.5,0,0.5,0),
@@ -1998,7 +1998,7 @@ Position=UDim2.new(0.5,0,0.5,0),
 end
 ax=ac("ImageLabel",{
 Image=ag.KeySystem.Thumbnail.Image,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(0,an,1,-12),
 Position=UDim2.new(0,6,0,6),
 Parent=ak.UIElements.Main,
@@ -2015,13 +2015,13 @@ ac("Frame",{
 
 Size=UDim2.new(1,ax and-an or 0,1,0),
 Position=UDim2.new(0,ax and an or 0,0,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Parent=ak.UIElements.Main
 },{
 ac("Frame",{
 
 Size=UDim2.new(1,0,1,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 ac("UIListLayout",{
 Padding=UDim.new(0,18),
@@ -2083,7 +2083,7 @@ ImageTransparency=.9,
 })
 
 ac("Frame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(0,0,1,0),
 AutomaticSize="X",
 Parent=aB.Frame,
@@ -2109,7 +2109,7 @@ aD.Size=UDim2.new(1,0,1,0)
 ac("Frame",{
 Size=UDim2.new(0,21,0,21),
 Parent=aB.Frame,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 aD
 })
@@ -2134,7 +2134,7 @@ Padding=UDim.new(0,5),
 })
 
 local b=ac("Frame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(0,az,0,0),
 ClipsDescendants=true,
 AnchorPoint=Vector2.new(1,0),
@@ -2146,7 +2146,7 @@ aE
 
 ac("TextLabel",{
 Text="Select Service",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 FontFace=Font.new(ab.Font,Enum.FontWeight.Medium),
 ThemeTag={TextColor3="Text"},
 TextTransparency=0.2,
@@ -2207,7 +2207,7 @@ PaddingRight=UDim.new(0,10),
 PaddingBottom=UDim.new(0,10),
 }),
 ac("Frame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(1,-34,0,0),
 AutomaticSize="Y",
 },{
@@ -2218,7 +2218,7 @@ HorizontalAlignment="Center",
 }),
 ac("TextLabel",{
 Text=g.Title or h.Name,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 FontFace=Font.new(ab.Font,Enum.FontWeight.Medium),
 ThemeTag={TextColor3="Text"},
 TextTransparency=0.05,
@@ -2230,7 +2230,7 @@ TextXAlignment="Left",
 }),
 ac("TextLabel",{
 Text=g.Desc or"",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 FontFace=Font.new(ab.Font,Enum.FontWeight.Regular),
 ThemeTag={TextColor3="Text"},
 TextTransparency=0.2,
@@ -2472,7 +2472,7 @@ local ag={}
 local ah,ai=createAcrylicBlur(af)
 
 local aj=ab("Frame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.fromScale(1,1),
 })
 
@@ -2512,7 +2512,7 @@ local ae={}
 
 ae.Frame=ac("Frame",{
 Size=UDim2.fromScale(1,1),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 BackgroundColor3=Color3.fromRGB(255,255,255),
 BorderSizePixel=0,
 },{
@@ -2533,7 +2533,7 @@ CornerRadius=UDim.new(0,8),
 }),
 
 ac("Frame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.fromScale(1,1),
 Name="Background",
 ThemeTag={
@@ -2547,7 +2547,7 @@ CornerRadius=UDim.new(0,8),
 
 ac("Frame",{
 BackgroundColor3=Color3.fromRGB(255,255,255),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.fromScale(1,1),
 },{
 
@@ -2568,7 +2568,7 @@ ImageTransparency=0.98,
 ScaleType=Enum.ScaleType.Tile,
 TileSize=UDim2.new(0,128,0,128),
 Size=UDim2.fromScale(1,1),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 ac("UICorner",{
 CornerRadius=UDim.new(0,8),
@@ -2581,7 +2581,7 @@ ImageTransparency=0.9,
 ScaleType=Enum.ScaleType.Tile,
 TileSize=UDim2.new(0,128,0,128),
 Size=UDim2.fromScale(1,1),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 ThemeTag={
 ImageTransparency="AcrylicNoise",
 },
@@ -2592,7 +2592,7 @@ CornerRadius=UDim.new(0,8),
 }),
 
 ac("Frame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.fromScale(1,1),
 ZIndex=2,
 },{
@@ -2732,7 +2732,7 @@ end
 
 local al=ac("TextLabel",{
 AutomaticSize="Y",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Text=af.Title,
 TextXAlignment="Left",
 FontFace=Font.new(ab.Font,Enum.FontWeight.SemiBold),
@@ -2745,7 +2745,7 @@ Size=UDim2.new(1,ak and-af.IconSize-14 or 0,0,0)
 })
 
 local am=ac("Frame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AutomaticSize="XY",
 },{
 ac("UIListLayout",{
@@ -2759,7 +2759,7 @@ ak,al
 local an=ac("Frame",{
 AutomaticSize="Y",
 Size=UDim2.new(1,0,0,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 
 
@@ -2782,7 +2782,7 @@ TextTransparency=.2,
 ThemeTag={
 TextColor3="Text",
 },
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 RichText=true,
 TextWrapped=true,
 })
@@ -2790,7 +2790,7 @@ end
 
 local ap=ac("Frame",{
 Size=UDim2.new(1,0,0,42),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 ac("UIListLayout",{
 Padding=UDim.new(0,9),
@@ -2810,7 +2810,7 @@ TextColor3="Text",
 },
 TextSize=18,
 FontFace=Font.new(ab.Font,Enum.FontWeight.Medium),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AutomaticSize="XY",
 AnchorPoint=Vector2.new(0.5,0.5),
 Position=UDim2.new(0.5,0,0.5,0),
@@ -2818,7 +2818,7 @@ Position=UDim2.new(0.5,0,0.5,0),
 end
 aq=ac("ImageLabel",{
 Image=af.Thumbnail.Image,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(0,ai,1,0),
 Parent=ah.UIElements.Main,
 ScaleType="Crop"
@@ -2834,13 +2834,13 @@ ac("Frame",{
 
 Size=UDim2.new(1,aq and-ai or 0,1,0),
 Position=UDim2.new(0,aq and ai or 0,0,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Parent=ah.UIElements.Main
 },{
 ac("Frame",{
 
 Size=UDim2.new(1,0,1,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 ac("UIListLayout",{
 Padding=UDim.new(0,18),
@@ -2887,7 +2887,7 @@ Image=ab.Icon(af)[1],
 ImageRectSize=ab.Icon(af)[2].ImageRectSize,
 ImageRectOffset=ab.Icon(af)[2].ImageRectPosition,
 Size=UDim2.new(0,21,0,21),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 ThemeTag={
 ImageColor3="Icon",
 }
@@ -2895,7 +2895,7 @@ ImageColor3="Icon",
 end
 
 local aj=ac("TextLabel",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 TextSize=17,
 FontFace=Font.new(ab.Font,Enum.FontWeight.Regular),
 Size=UDim2.new(1,ai and-29 or 0,1,0),
@@ -2909,12 +2909,12 @@ Text=ae,
 local ak=ac("TextButton",{
 Size=UDim2.new(1,0,0,42),
 Parent=ag,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Text="",
 },{
 ac("Frame",{
 Size=UDim2.new(1,0,1,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 ab.NewRoundFrame(ah,"Squircle",{
 ThemeTag={
@@ -2983,7 +2983,7 @@ ac.Tween
 function aa.New(af,ag,ah,ai)
 local aj=ad("Frame",{
 Size=UDim2.new(0,ai,1,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Position=UDim2.new(1,0,0,0),
 AnchorPoint=Vector2.new(1,0),
 Parent=ag,
@@ -3002,7 +3002,7 @@ local al=ad("Frame",{
 Size=UDim2.new(1,12,1,12),
 Position=UDim2.new(0.5,0,0.5,0),
 AnchorPoint=Vector2.new(0.5,0.5),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Active=true,
 ZIndex=999,
 Parent=ak,
@@ -3225,7 +3225,7 @@ TextSize=14,
 }
 
 local ai=ac("TextLabel",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AutomaticSize="XY",
 TextSize=ah.TextSize,
 FontFace=Font.new(ab.Font,Enum.FontWeight.SemiBold),
@@ -3560,13 +3560,13 @@ local ai=ac("TextLabel",{
 Text=af.Title,
 TextSize=17,
 FontFace=Font.new(ab.Font,Enum.FontWeight.Medium),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AutomaticSize="XY",
 })
 
 local aj=ac("Frame",{
 Size=UDim2.new(0,36,0,36),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Name="Drag",
 },{
 ac("ImageLabel",{
@@ -3574,7 +3574,7 @@ Image=ab.Icon"move"[1],
 ImageRectOffset=ab.Icon"move"[2].ImageRectPosition,
 ImageRectSize=ab.Icon"move"[2].ImageRectSize,
 Size=UDim2.new(0,18,0,18),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Position=UDim2.new(0.5,0,0.5,0),
 AnchorPoint=Vector2.new(0.5,0.5),
 })
@@ -3592,7 +3592,7 @@ Size=UDim2.new(0,0,0,0),
 Position=UDim2.new(0.5,0,0,28),
 AnchorPoint=Vector2.new(0.5,0.5),
 Parent=af.Parent,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Active=true,
 Visible=false,
 })
@@ -3633,7 +3633,7 @@ VerticalAlignment="Center",
 ac("TextButton",{
 AutomaticSize="XY",
 Active=true,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(0,0,0,36),
 
 BackgroundColor3=Color3.new(1,1,1),
@@ -3700,7 +3700,7 @@ ab.AddSignal(am.TextButton.MouseEnter,function()
 ad(am.TextButton,.1,{BackgroundTransparency=0}):Play()
 end)
 ab.AddSignal(am.TextButton.MouseLeave,function()
-ad(am.TextButton,.1,{BackgroundTransparency=0}):Play()
+ad(am.TextButton,.1,{BackgroundTransparency=1}):Play()
 end)
 
 local an=ab.Drag(al)
@@ -3792,7 +3792,7 @@ ToolTipSize=16,
 local ah=ac("TextLabel",{
 AutomaticSize="XY",
 TextWrapped=true,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 FontFace=Font.new(ab.Font,Enum.FontWeight.Medium),
 Text=ae,
 TextSize=17,
@@ -3809,7 +3809,7 @@ Scale=.9
 local aj=ac("Frame",{
 AnchorPoint=Vector2.new(0.5,0),
 AutomaticSize="XY",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Parent=af,
 
 Visible=false
@@ -3819,13 +3819,13 @@ MaxSize=Vector2.new(400,math.huge)
 }),
 ac("Frame",{
 AutomaticSize="XY",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 LayoutOrder=99,
 Visible=false
 },{
 ac("ImageLabel",{
 Size=UDim2.new(0,ag.ToolTipSize,0,ag.ToolTipSize/2),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Rotation=180,
 Image="rbxassetid://89524607682719",
 ThemeTag={
@@ -3834,7 +3834,7 @@ ImageColor3="Accent",
 },{
 ac("ImageLabel",{
 Size=UDim2.new(0,ag.ToolTipSize,0,ag.ToolTipSize/2),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 LayoutOrder=99,
 ImageTransparency=.9,
 Image="rbxassetid://89524607682719",
@@ -3860,7 +3860,7 @@ ThemeTag={
 BackgroundColor3="Text",
 },
 AutomaticSize="XY",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 ac("UICorner",{
 CornerRadius=UDim.new(0,16),
@@ -4038,7 +4038,7 @@ or typeof(af.Color)=="Color3"
 and GetTextColorForHSB(af.Color)
 
 return ab("TextLabel",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Text=am or"",
 TextSize=an=="Desc"and 14 or 16,
 TextXAlignment="Left",
@@ -4063,7 +4063,7 @@ end
 af.UIElements.Container=ab("Frame",{
 Size=UDim2.new(1,0,0,0),
 AutomaticSize="Y",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 ab("UIListLayout",{
 Padding=UDim.new(0,af.UIPadding),
@@ -4075,7 +4075,7 @@ ak,
 ab("Frame",{
 Size=UDim2.new(1,-ae.TextOffset,0,0),
 AutomaticSize="Y",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 ab("UIListLayout",{
 Padding=UDim.new(0,af.UIPadding),
@@ -4085,7 +4085,7 @@ HorizontalAlignment="Left",
 }),
 al,
 ab("Frame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AutomaticSize="Y",
 Size=UDim2.new(1,-aj,0,(50-(af.UIPadding*2)))
 },{
@@ -4220,7 +4220,7 @@ ag.ParagraphFrame=ah
 if af.Buttons and#af.Buttons>0 then
 local ai=ab("Frame",{
 Size=UDim2.new(1,0,0,38),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AutomaticSize="Y",
 Parent=ah.UIElements.Container
 },{
@@ -4278,7 +4278,7 @@ af.UIElements.ButtonIcon=ab("ImageLabel",{
 Image=aa.Icon"mouse-pointer-click"[1],
 ImageRectOffset=aa.Icon"mouse-pointer-click"[2].ImageRectPosition,
 ImageRectSize=aa.Icon"mouse-pointer-click"[2].ImageRectSize,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Parent=af.ButtonFrame.UIElements.Main,
 Size=UDim2.new(0,20,0,20),
 AnchorPoint=Vector2.new(1,0.5),
@@ -4328,7 +4328,7 @@ local ak
 if af and af~=""then
 ak=ac("ImageLabel",{
 Size=UDim2.new(1,-7,1,-7),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AnchorPoint=Vector2.new(0.5,0.5),
 Position=UDim2.new(0.5,0,0.5,0),
 Image=ab.Icon(af)[1],
@@ -4449,7 +4449,7 @@ af=af or"check"
 local aj=10
 local ak=ac("ImageLabel",{
 Size=UDim2.new(1,-10,1,-10),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AnchorPoint=Vector2.new(0.5,0.5),
 Position=UDim2.new(0.5,0,0.5,0),
 Image=ab.Icon(af)[1],
@@ -4704,7 +4704,7 @@ Size=UDim2.new(0,ai.Width,0,0),
 AutomaticSize="Y",
 Position=UDim2.new(1,0,.5,0),
 AnchorPoint=Vector2.new(1,0.5),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Parent=ai.SliderFrame.UIElements.Main,
 },{
 ac("UIListLayout",{
@@ -4724,7 +4724,7 @@ TextTransparency=.4,
 AutomaticSize="Y",
 TextSize=15,
 FontFace=Font.new(aa.Font,Enum.FontWeight.Medium),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 LayoutOrder=-1,
 })
 })
@@ -5126,7 +5126,7 @@ PaddingRight=UDim.new(0,aj.MenuPadding),
 PaddingBottom=UDim.new(0,aj.MenuPadding),
 }),
 ag("Frame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(1,0,1,0),
 
 ClipsDescendants=true
@@ -5140,7 +5140,7 @@ ScrollBarThickness=0,
 ScrollingDirection="Y",
 AutomaticCanvasSize="Y",
 CanvasSize=UDim2.new(0,0,0,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 ScrollBarImageTransparency=1,
 },{
 am.UIElements.UIListLayout,
@@ -5150,7 +5150,7 @@ am.UIElements.UIListLayout,
 
 am.UIElements.MenuCanvas=ag("Frame",{
 Size=UDim2.new(0,am.MenuWidth,0,300),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Position=UDim2.new(-10,0,-10,0),
 Visible=false,
 Active=false,
@@ -5282,7 +5282,7 @@ NumberSequenceKeypoint.new(1.0,0.1),
 }),
 ag("Frame",{
 Size=UDim2.new(1,0,1,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 ag("UIPadding",{
 
@@ -5315,7 +5315,7 @@ TextColor3="Text",
 BackgroundColor3="Text"
 },
 TextSize=15,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 TextTransparency=.4,
 AutomaticSize="Y",
 
@@ -5711,7 +5711,7 @@ LineHeight=1.15,
 RichText=true,
 TextXAlignment="Left",
 Size=UDim2.new(0,0,0,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AutomaticSize="XY",
 },{
 ae("UIPadding",{
@@ -5725,7 +5725,7 @@ an.Font="Code"
 
 local ao=ae("ScrollingFrame",{
 Size=UDim2.new(1,0,0,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AutomaticCanvasSize="X",
 ScrollingDirection="X",
 ElasticBehavior="Never",
@@ -5736,7 +5736,7 @@ an
 })
 
 local ap=ae("TextButton",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(0,30,0,30),
 Position=UDim2.new(1,-am.Padding/2,0,am.Padding/2),
 AnchorPoint=Vector2.new(1,0),
@@ -5760,7 +5760,7 @@ ae("ImageLabel",{
 Image=ac.Icon"copy"[1],
 ImageRectSize=ac.Icon"copy"[2].ImageRectSize,
 ImageRectOffset=ac.Icon"copy"[2].ImageRectPosition,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AnchorPoint=Vector2.new(0.5,0.5),
 Position=UDim2.new(0.5,0,0.5,0),
 Size=UDim2.new(0,12,0,12),
@@ -5801,7 +5801,7 @@ ImageColor3=Color3.fromHex"#ffffff",
 ImageTransparency=.955,
 }),
 ae("Frame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(1,0,0,0),
 AutomaticSize="Y",
 },{
@@ -5816,7 +5816,7 @@ Visible=ai and true or false
 },{
 ae("ImageLabel",{
 Size=UDim2.new(0,18,0,18),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Image="rbxassetid://132464694294269",
 
 
@@ -5835,7 +5835,7 @@ TextSize=16,
 AutomaticSize="Y",
 FontFace=Font.new(ac.Font,Enum.FontWeight.Medium),
 TextXAlignment="Left",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 TextTruncate="AtEnd",
 Size=UDim2.new(1,ap and-20-(am.Padding*2),0,0)
 }),
@@ -6020,7 +6020,7 @@ AutomaticSize="Y",
 ThemeTag={
 TextColor3="Text"
 },
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Parent=av.UIElements.Main
 },{
 ac("UIPadding",{
@@ -6095,7 +6095,7 @@ at.UIElements.Inputs=ac("Frame",{
 AutomaticSize="XY",
 Size=UDim2.new(0,0,0,0),
 Position=UDim2.fromOffset(at.Transparency and 240 or 210,40+at.TextPadding),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Parent=av.UIElements.Main
 },{
 ac("UIListLayout",{
@@ -6123,7 +6123,7 @@ Image="http://www.roblox.com/asset/?id=14204231522",
 ImageTransparency=0.45,
 ScaleType=Enum.ScaleType.Tile,
 TileSize=UDim2.fromOffset(40,40),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Position=UDim2.fromOffset(85,208+at.TextPadding),
 Size=UDim2.fromOffset(75,24),
 Parent=av.UIElements.Main,
@@ -6179,7 +6179,7 @@ Image="http://www.roblox.com/asset/?id=14204231522",
 ImageTransparency=0.45,
 ScaleType=Enum.ScaleType.Tile,
 TileSize=UDim2.fromOffset(40,40),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Position=UDim2.fromOffset(0,208+at.TextPadding),
 Size=UDim2.fromOffset(75,24),
 Parent=av.UIElements.Main,
@@ -6233,7 +6233,7 @@ Rotation=90,
 local aE=ac("Frame",{
 Size=UDim2.new(1,0,1,0),
 Position=UDim2.new(0,0,0,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 })
 
 local b=ac("Frame",{
@@ -6274,7 +6274,7 @@ function CreateNewInput(g,h)
 local i=am(g,nil,at.UIElements.Inputs)
 
 ac("TextLabel",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 TextTransparency=.4,
 TextSize=17,
 FontFace=Font.new(aa.Font,Enum.FontWeight.Regular),
@@ -6321,7 +6321,7 @@ local m=ac("Frame",{
 Size=UDim2.new(1,0,0,40),
 AutomaticSize="Y",
 Position=UDim2.new(0,0,0,254+at.TextPadding),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Parent=av.UIElements.Main,
 LayoutOrder=4,
 },{
@@ -6365,7 +6365,7 @@ if at.Transparency then
 local C=ac("Frame",{
 Size=UDim2.new(1,0,1,0),
 Position=UDim2.fromOffset(0,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 })
 
 A=ac("ImageLabel",{
@@ -6410,7 +6410,7 @@ z=ac("Frame",{
 Size=UDim2.fromOffset(6,192),
 Position=UDim2.fromOffset(210,40+at.TextPadding),
 Parent=av.UIElements.Main,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 ac("UICorner",{
 CornerRadius=UDim.new(1,0),
@@ -6420,7 +6420,7 @@ Image="rbxassetid://14204231522",
 ImageTransparency=0.45,
 ScaleType=Enum.ScaleType.Tile,
 TileSize=UDim2.fromOffset(40,40),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.fromScale(1,1),
 },{
 ac("UICorner",{
@@ -6707,12 +6707,12 @@ end
 
 local ak=ac("Frame",{
 Size=UDim2.new(0,ai.IconSize,0,ai.IconSize),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Visible=false
 },{
 ac("ImageLabel",{
 Size=UDim2.new(1,0,1,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Image=aa.Icon"chevron-down"[1],
 ImageRectSize=aa.Icon"chevron-down"[2].ImageRectSize,
 ImageRectOffset=aa.Icon"chevron-down"[2].ImageRectPosition,
@@ -6729,7 +6729,7 @@ ai:SetIcon(ai.Icon)
 end
 
 local al=ac("TextLabel",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 TextXAlignment="Left",
 AutomaticSize="Y",
 TextSize=ai.TextSize,
@@ -6753,14 +6753,14 @@ TextWrapped=true,
 
 local am=ac("Frame",{
 Size=UDim2.new(1,0,0,ai.HeaderSize),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 
 Parent=ah.Parent,
 ClipsDescendants=true,
 },{
 ac("TextButton",{
 Size=UDim2.new(1,0,0,ai.HeaderSize),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Text="",
 },{
 aj,
@@ -6778,7 +6778,7 @@ PaddingBottom=UDim.new(0,2),
 ak,
 }),
 ac("Frame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(1,0,0,0),
 AutomaticSize="Y",
 Name="Content",
@@ -6880,7 +6880,7 @@ local ah=ac("Frame",{
 Size=UDim2.new(1,0,0,1),
 Position=UDim2.new(0.5,0,0.5,0),
 AnchorPoint=Vector2.new(0.5,0.5),
-BackgroundTransparency=.9,
+BackgroundTransparency=0,
 ThemeTag={
 BackgroundColor3="Text"
 }
@@ -6888,7 +6888,7 @@ BackgroundColor3="Text"
 ac("Frame",{
 Parent=ag.Parent,
 Size=UDim2.new(1,-7,0,5),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 ah
 })
@@ -7010,7 +7010,7 @@ local am=ai.TabCount
 al.Index=am
 
 al.UIElements.Main=ac.NewRoundFrame(al.UICorner,"Squircle",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(1,-7,0,0),
 AutomaticSize="Y",
 Parent=aj.Parent,
@@ -7070,7 +7070,7 @@ RichText=true,
 AutomaticSize="Y",
 LayoutOrder=2,
 TextXAlignment="Left",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 }),
 ae("UIPadding",{
 PaddingTop=UDim.new(0,2+(Window.UIPadding/2)),
@@ -7124,7 +7124,7 @@ end
 
 al.UIElements.ContainerFrame=ae("ScrollingFrame",{
 Size=UDim2.new(1,0,1,al.ShowTabTitle and-((Window.UIPadding*2.4)+12)or 0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 ScrollBarThickness=0,
 ElasticBehavior="Never",
 CanvasSize=UDim2.new(0,0,0,0),
@@ -7153,7 +7153,7 @@ HorizontalAlignment="Center",
 
 al.UIElements.ContainerFrameCanvas=ae("Frame",{
 Size=UDim2.new(1,0,1,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Visible=false,
 Parent=Window.UIElements.MainBar,
 ZIndex=5,
@@ -7161,7 +7161,7 @@ ZIndex=5,
 al.UIElements.ContainerFrame,
 ae("Frame",{
 Size=UDim2.new(1,0,0,((Window.UIPadding*2.4)+12)),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Visible=al.ShowTabTitle or false,
 Name="TabTitle"
 },{
@@ -7179,7 +7179,7 @@ TextTruncate="AtEnd",
 RichText=true,
 LayoutOrder=2,
 TextXAlignment="Left",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 }),
 ae("UIPadding",{
 PaddingTop=UDim.new(0,20),
@@ -7196,7 +7196,7 @@ VerticalAlignment="Center",
 }),
 ae("Frame",{
 Size=UDim2.new(1,0,0,1),
-BackgroundTransparency=.9,
+BackgroundTransparency=0,
 ThemeTag={
 BackgroundColor3="Text"
 },
@@ -7288,7 +7288,7 @@ av.Load(al,al.UIElements.ContainerFrame,av.Elements,Window,WindUI,nil,av,ak)
 
 task.spawn(function()
 local aw=ae("Frame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(1,0,1,-Window.UIElements.Main.Main.Topbar.AbsoluteSize.Y),
 Parent=al.UIElements.ContainerFrame
 },{
@@ -7307,7 +7307,7 @@ ImageRectSize=ac.Icon"frown"[2].ImageRectSize,
 ThemeTag={
 ImageColor3="Icon"
 },
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 ImageTransparency=.6,
 }),
 ae("TextLabel",{
@@ -7318,7 +7318,7 @@ TextColor3="Text"
 },
 TextSize=18,
 TextTransparency=.5,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 FontFace=Font.new(ac.Font,Enum.FontWeight.Medium),
 })
 })
@@ -7417,12 +7417,12 @@ end
 
 local an=ae("Frame",{
 Size=UDim2.new(0,al.IconSize,0,al.IconSize),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Visible=false
 },{
 ae("ImageLabel",{
 Size=UDim2.new(1,0,1,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Image=ac.Icon"chevron-down"[1],
 ImageRectSize=ac.Icon"chevron-down"[2].ImageRectSize,
 ImageRectOffset=ac.Icon"chevron-down"[2].ImageRectPosition,
@@ -7435,13 +7435,13 @@ ImageTransparency=.7,
 
 local ao=ae("Frame",{
 Size=UDim2.new(1,0,0,al.HeaderSize),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Parent=ai,
 ClipsDescendants=true,
 },{
 ae("TextButton",{
 Size=UDim2.new(1,0,0,al.HeaderSize),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Text="",
 },{
 am,
@@ -7461,7 +7461,7 @@ TextColor3="Text",
 },
 FontFace=Font.new(ac.Font,Enum.FontWeight.SemiBold),
 TextSize=14,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 TextTransparency=.7,
 
 TextWrapped=true
@@ -7478,7 +7478,7 @@ PaddingRight=UDim.new(0,11),
 })
 }),
 ae("Frame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(1,0,0,0),
 AutomaticSize="Y",
 Name="Content",
@@ -7600,7 +7600,7 @@ Size=UDim2.new(
 AutomaticSize="Y",
 ClipsDescendants=true,
 ClearTextOnFocus=false,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 TextXAlignment="Left",
 FontFace=Font.new(ac.Font,Enum.FontWeight.Regular),
 TextSize=17,
@@ -7610,7 +7610,7 @@ local al=ae("ImageLabel",{
 Image=ac.Icon"x"[1],
 ImageRectSize=ac.Icon"x"[2].ImageRectSize,
 ImageRectOffset=ac.Icon"x"[2].ImageRectPosition,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 ThemeTag={
 ImageColor3="Text",
 },
@@ -7619,7 +7619,7 @@ Size=UDim2.new(0,aj.IconSize,0,aj.IconSize)
 },{
 ae("TextButton",{
 Size=UDim2.new(1,8,1,8),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Active=true,
 ZIndex=999999999,
 AnchorPoint=Vector2.new(0.5,0.5),
@@ -7635,7 +7635,7 @@ ScrollingDirection="Y",
 ElasticBehavior="Never",
 ScrollBarThickness=0,
 CanvasSize=UDim2.new(0,0,0,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Visible=false
 },{
 ae("UIListLayout",{
@@ -7659,13 +7659,13 @@ ImageTransparency=0,
 },{
 ae("Frame",{
 Size=UDim2.new(1,0,1,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 
 Visible=false,
 },{
 ae("Frame",{
 Size=UDim2.new(1,0,0,46),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 
 
@@ -7677,13 +7677,13 @@ BackgroundTransparency=0,
 
 ae("Frame",{
 Size=UDim2.new(1,0,1,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 ae("ImageLabel",{
 Image=ac.Icon"search"[1],
 ImageRectSize=ac.Icon"search"[2].ImageRectSize,
 ImageRectOffset=ac.Icon"search"[2].ImageRectPosition,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 ThemeTag={
 ImageColor3="Icon",
 },
@@ -7704,7 +7704,7 @@ PaddingRight=UDim.new(0,aj.Padding),
 })
 }),
 ae("Frame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AutomaticSize="Y",
 Size=UDim2.new(1,0,0,0),
 Name="Results",
@@ -7714,7 +7714,7 @@ Size=UDim2.new(1,0,0,1),
 ThemeTag={
 BackgroundColor3="Outline",
 },
-BackgroundTransparency=.9,
+BackgroundTransparency=0,
 Visible=false,
 }),
 am,
@@ -7733,7 +7733,7 @@ local ao=ae("Frame",{
 Size=UDim2.new(0,aj.Width,0,0),
 AutomaticSize="Y",
 Parent=ah,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Position=UDim2.new(0.5,0,0.5,0),
 AnchorPoint=Vector2.new(0.5,0.5),
 Visible=false,
@@ -7766,7 +7766,7 @@ local function CreateSearchTab(ap,ar,as,at,au,av)
 local aw=ae("TextButton",{
 Size=UDim2.new(1,0,0,0),
 AutomaticSize="Y",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Parent=at or nil
 },{
 ac.NewRoundFrame(aj.Radius-6,"Squircle",{
@@ -7808,7 +7808,7 @@ ae("ImageLabel",{
 Image=ac.Icon(as)[1],
 ImageRectSize=ac.Icon(as)[2].ImageRectSize,
 ImageRectOffset=ac.Icon(as)[2].ImageRectPosition,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 ThemeTag={
 ImageColor3="Text",
 },
@@ -7817,7 +7817,7 @@ Size=UDim2.new(0,aj.IconSize,0,aj.IconSize)
 }),
 ae("Frame",{
 Size=UDim2.new(1,-aj.IconSize-aj.Padding,0,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 ae("TextLabel",{
 Text=ap,
@@ -7825,7 +7825,7 @@ ThemeTag={
 TextColor3="Text",
 },
 TextSize=17,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 TextXAlignment="Left",
 FontFace=Font.new(ac.Font,Enum.FontWeight.Medium),
 Size=UDim2.new(1,0,0,0),
@@ -7841,7 +7841,7 @@ TextColor3="Text",
 },
 TextSize=15,
 TextTransparency=.25,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 TextXAlignment="Left",
 FontFace=Font.new(ac.Font,Enum.FontWeight.Medium),
 Size=UDim2.new(1,0,0,0),
@@ -7864,13 +7864,13 @@ ae("Frame",{
 Name="ParentContainer",
 Size=UDim2.new(1,-aj.Padding,0,0),
 AutomaticSize="Y",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Visible=au,
 
 },{
 ac.NewRoundFrame(99,"Squircle",{
 Size=UDim2.new(0,2,1,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 ThemeTag={
 ImageColor3="Text"
 },
@@ -7879,7 +7879,7 @@ ImageTransparency=.9,
 ae("Frame",{
 Size=UDim2.new(1,-aj.Padding-2,0,0),
 Position=UDim2.new(0,aj.Padding+2,0,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 ae("UIListLayout",{
 Padding=UDim.new(0,0),
@@ -8009,14 +8009,14 @@ end
 elseif ar~=""then
 ae("TextLabel",{
 Size=UDim2.new(1,0,0,70),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Text="No results found",
 TextSize=16,
 ThemeTag={
 TextColor3="Text",
 },
 TextTransparency=.2,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 FontFace=Font.new(ac.Font,Enum.FontWeight.Medium),
 Parent=am,
 Name="NotFound",
@@ -8174,13 +8174,13 @@ local at=ag("Frame",{
 Size=UDim2.new(0,32,0,32),
 Position=UDim2.new(1,0,1,0),
 AnchorPoint=Vector2.new(.5,.5),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 ZIndex=99,
 Active=true
 },{
 ag("ImageLabel",{
 Size=UDim2.new(0,96,0,96),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Image="rbxassetid://120997033468887",
 Position=UDim2.new(0.5,-16,0.5,-16),
 AnchorPoint=Vector2.new(0.5,0.5),
@@ -8199,7 +8199,7 @@ Size=UDim2.new(0,70,0,70),
 Image=af.Icon"expand"[1],
 ImageRectOffset=af.Icon"expand"[2].ImageRectPosition,
 ImageRectSize=af.Icon"expand"[2].ImageRectSize,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Position=UDim2.new(0.5,0,0.5,0),
 AnchorPoint=Vector2.new(0.5,0.5),
 ImageTransparency=1,
@@ -8232,7 +8232,7 @@ not ao.HideSearchBar and-45 or 0
 ),
 Position=UDim2.new(0,0,1,0),
 AnchorPoint=Vector2.new(0,1),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 ScrollBarThickness=0,
 ElasticBehavior="Never",
 CanvasSize=UDim2.new(0,0,0,0),
@@ -8242,7 +8242,7 @@ ClipsDescendants=true,
 VerticalScrollBarPosition="Left",
 },{
 ag("Frame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AutomaticSize="Y",
 Size=UDim2.new(1,0,0,0),
 Name="Frame",
@@ -8270,12 +8270,12 @@ PaddingRight=UDim.new(0,ao.UIPadding/2),
 ao.UIElements.SideBarContainer=ag("Frame",{
 Size=UDim2.new(0,ao.SideBarWidth,1,ao.User.Enabled and-94-(ao.UIPadding*2)or-52),
 Position=UDim2.new(0,0,0,52),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Visible=true,
 },{
 ag("Frame",{
 Name="Content",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(
 1,
 0,
@@ -8297,7 +8297,7 @@ ao.UIElements.MainBar=ag("Frame",{
 Size=UDim2.new(1,-ao.UIElements.SideBarContainer.AbsoluteSize.X,1,-52),
 Position=UDim2.new(1,0,1,0),
 AnchorPoint=Vector2.new(1,1),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 af.NewRoundFrame(ao.UICorner-(ao.UIPadding/2),"Squircle",{
 Size=UDim2.new(1,0,1,0),
@@ -8322,7 +8322,7 @@ Size=UDim2.new(1,120,1,116),
 Position=UDim2.new(0,-60,0,-58),
 ScaleType="Slice",
 SliceCenter=Rect.new(99,99,99,99),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 ZIndex=-999999999999999,
 Name="Blur",
 })
@@ -8361,7 +8361,7 @@ Size=UDim2.new(0,
 ),
 Position=UDim2.new(0,ao.UIPadding/2,1,-(ao.UIPadding/2)),
 AnchorPoint=Vector2.new(0,1),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 af.NewRoundFrame(ao.UICorner-(ao.UIPadding/2),"SquircleOutline",{
 Size=UDim2.new(1,0,1,0),
@@ -8395,12 +8395,12 @@ Name="UserIcon",
 },{
 ag("ImageLabel",{
 Image=az,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(0,42,0,42),
 ThemeTag={
 BackgroundColor3="Text",
 },
-BackgroundTransparency=.93,
+BackgroundTransparency=0,
 },{
 ag("UICorner",{
 CornerRadius=UDim.new(1,0)
@@ -8408,7 +8408,7 @@ CornerRadius=UDim.new(1,0)
 }),
 ag("Frame",{
 AutomaticSize="XY",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 ag("TextLabel",{
 Text=ao.User.Anonymous and"Anonymous"or game.Players.LocalPlayer.DisplayName,
@@ -8418,7 +8418,7 @@ TextColor3="Text",
 },
 FontFace=Font.new(af.Font,Enum.FontWeight.SemiBold),
 AutomaticSize="Y",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(1,-27,0,0),
 TextTruncate="AtEnd",
 TextXAlignment="Left",
@@ -8432,7 +8432,7 @@ TextColor3="Text",
 },
 FontFace=Font.new(af.Font,Enum.FontWeight.Medium),
 AutomaticSize="Y",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(1,-27,0,0),
 TextTruncate="AtEnd",
 TextXAlignment="Left",
@@ -8505,7 +8505,7 @@ aD=getcustomasset(aE)
 end
 
 aC=ag("VideoFrame",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(1,0,1,0),
 Video=aD,
 Looped=true,
@@ -8518,7 +8518,7 @@ CornerRadius=UDim.new(0,ao.UICorner)
 aC:Play()
 elseif ao.Background then
 aC=ag("ImageLabel",{
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Size=UDim2.new(1,0,1,0),
 Image=typeof(ao.Background)=="string"and ao.Background or"",
 ImageTransparency=1,
@@ -8540,7 +8540,7 @@ AnchorPoint=Vector2.new(0.5,0),
 },{
 ag("Frame",{
 Size=UDim2.new(1,12,1,12),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Position=UDim2.new(0.5,0,0.5,0),
 AnchorPoint=Vector2.new(0.5,0.5),
 Active=true,
@@ -8552,7 +8552,7 @@ function createAuthor(b)
 return ag("TextLabel",{
 Text=b,
 FontFace=Font.new(af.Font,Enum.FontWeight.Medium),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 TextTransparency=0.35,
 AutomaticSize="XY",
 Parent=ao.UIElements.Main and ao.UIElements.Main.Main.Topbar.Left.Title,
@@ -8577,7 +8577,7 @@ end
 local g=ag("TextLabel",{
 Text=ao.Title,
 FontFace=Font.new(af.Font,Enum.FontWeight.SemiBold),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AutomaticSize="XY",
 Name="Title",
 TextXAlignment="Left",
@@ -8590,7 +8590,7 @@ TextColor3="Text"
 ao.UIElements.Main=ag("Frame",{
 Size=ao.Size,
 Position=ao.Position,
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Parent=an.Parent,
 AnchorPoint=Vector2.new(0.5,0.5),
 Active=true,
@@ -8621,7 +8621,7 @@ au,
 av,
 ag("Frame",{
 Size=UDim2.new(1,0,1,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Name="Main",
 
 Visible=false,
@@ -8638,7 +8638,7 @@ ay,
 aA,
 ag("Frame",{
 Size=UDim2.new(1,0,0,52),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 BackgroundColor3=Color3.fromRGB(50,50,50),
 Name="Topbar"
 },{
@@ -8652,7 +8652,7 @@ az,
 ag("Frame",{
 AutomaticSize="X",
 Size=UDim2.new(0,0,1,0),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Name="Left"
 },{
 ag("UIListLayout",{
@@ -8663,7 +8663,7 @@ VerticalAlignment="Center",
 }),
 ag("Frame",{
 AutomaticSize="XY",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Name="Title",
 Size=UDim2.new(0,0,1,0),
 LayoutOrder=2,
@@ -8683,7 +8683,7 @@ PaddingLeft=UDim.new(0,4)
 }),
 ag("ScrollingFrame",{
 Name="Center",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 AutomaticSize="Y",
 ScrollBarThickness=0,
 ScrollingDirection="X",
@@ -8703,7 +8703,7 @@ Padding=UDim.new(0,ao.UIPadding/2)
 }),
 ag("Frame",{
 AutomaticSize="XY",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Position=UDim2.new(1,0,0.5,0),
 AnchorPoint=Vector2.new(1,0.5),
 Name="Right",
@@ -9219,7 +9219,7 @@ local z=ag("Frame",{
 Size=UDim2.new(1,0,0,1),
 Position=UDim2.new(0.5,0,0,0),
 AnchorPoint=Vector2.new(0.5,0),
-BackgroundTransparency=.9,
+BackgroundTransparency=0,
 ThemeTag={
 BackgroundColor3="Text"
 }
@@ -9228,7 +9228,7 @@ local A=ag("Frame",{
 Parent=ao.UIElements.SideBar.Frame,
 
 Size=UDim2.new(1,-7,0,5),
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 },{
 z
 })
@@ -9253,7 +9253,7 @@ C.UIElements.Main.Size=UDim2.new(0,B.Width,0,0)
 local F=ag("Frame",{
 Size=UDim2.new(1,0,0,0),
 AutomaticSize="Y",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Parent=C.UIElements.Main
 },{
 ag("UIListLayout",{
@@ -9309,7 +9309,7 @@ AutomaticSize="Y",
 ThemeTag={
 TextColor3="Text"
 },
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Parent=F
 })
 if B.Content then
@@ -9327,7 +9327,7 @@ LayoutOrder=2,
 ThemeTag={
 TextColor3="Text"
 },
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Parent=C.UIElements.Main
 },{
 ag("UIPadding",{
@@ -9347,7 +9347,7 @@ HorizontalAlignment="Right",
 local J=ag("Frame",{
 Size=UDim2.new(1,0,0,40),
 AutomaticSize="None",
-BackgroundTransparency=0,
+BackgroundTransparency=1,
 Parent=C.UIElements.Main,
 LayoutOrder=4,
 },{
